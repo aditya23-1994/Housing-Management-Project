@@ -84,10 +84,14 @@ WSGI_APPLICATION = 'sms.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        
     }
 }
+DATABASES['default'] = dj_database_url.config(default='postgres://tcvfbixwcjritr:1e597991a674e10472c74891cb52ec9e2d6361cabe068babb9bef579bf2107f0@ec2-3-230-106-126.compute-1.amazonaws.com:5432/d1vdjbe10f5kg6')
+
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
