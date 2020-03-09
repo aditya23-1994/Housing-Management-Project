@@ -1,6 +1,13 @@
 # Housing-Management-Project
 A housing management Project
 Webiste -->  https://arcane-tundra-59376.herokuapp.com/  
+Website/admin -->  
+
+https://arcane-tundra-59376.herokuapp.com/admin/login/?next=/admin/  
+
+username:- admin                      Password:- system1234
+
+
 Admin specs:-(BACKEND) 
         1:- To add a User to the site 
         2:- To Delete, update or retrieve the user. 
