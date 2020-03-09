@@ -5,7 +5,8 @@ Website/admin -->
 
 https://arcane-tundra-59376.herokuapp.com/admin/login/?next=/admin/  
 
-username:- admin                      Password:- system1234
+username:- admin     
+Password:- system1234
 
 
 Admin specs:-(BACKEND) 
