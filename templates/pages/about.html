@@ -57,6 +57,7 @@
       <div class="row text-center">
         {% if managers %}
           {% for manager in managers %}
+          {% if manager.is_available == True %}
           <div class="col-md-4">
             <img src="{{ manager.photo.url}}" alt="" class="rounded-circle mb-3">
             <h4>{{ manager.name }}</h4>
@@ -68,6 +69,7 @@
             <p>
               <i class="fas fa-envelope-open"></i>{{ manager.email }}</p>
           </div>
+          {% endif %}
           {% endfor %}
         {% else %}
           <div class="col-md-12">

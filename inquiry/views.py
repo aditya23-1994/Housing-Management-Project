@@ -8,7 +8,7 @@ def contact(request):
         name = request.POST['name']
         phone = request.POST['phone']
         email = request.POST['email']
-        # flat = request.POST['flat']
+        
         message = request.POST['message']
         user_id = request.POST['user_id']
 
@@ -17,6 +17,6 @@ def contact(request):
 
         contact.save()
 
-        messages.success(request,"Your query has been submited a manager will get to you soon")
+        messages.success(request,"Your query has been submitted and a manager will get to you soon")
 
         return redirect('dashboard')
